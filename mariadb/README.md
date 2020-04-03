@@ -1,5 +1,6 @@
-﻿## 设置MariaDB的默认密码
+﻿# 设置MariaDB的默认密码
 ```bash
+$ cd default-password/
 $ docker build -t db:test .
 $ docker run -itd -p 3306:3306 db:test
 $ docker exec -it CONTAINER_ID bash
