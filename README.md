@@ -5,3 +5,7 @@
 
 ## MariaDB
 - [在Dockerfile中设置mariadb的默认密码](./mariadb#设置MariaDB的默认密码)
+
+
+## 其他资源
+- [很棒的Docker Compose示例](https://github.com/docker/awesome-compose)
