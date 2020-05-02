@@ -5,6 +5,7 @@
 
 ## MariaDB
 - [在Dockerfile中设置mariadb的默认密码](./mariadb#设置MariaDB的默认密码)
+- [启动MariaDB,并导入sql文件](./mariadb#启动mysql,并导入sql文件)
 
 
 ## 其他资源
