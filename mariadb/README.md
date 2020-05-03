@@ -8,7 +8,7 @@ $ mysql -u root -p
 $ 输入：123456
 ```
 
-# 启动mysql,并导入sql文件
+# 启动MariaDB并导入sql文件
 ```bash
 $ cd dump-sql/
 $ docker build -t db:dump .
