@@ -8,6 +8,7 @@ const Con = mysql.createPool({
     user: 'root',
     password: '123456',
     database: 'testdb',
+    connectTimeout: 10000 * 1000
 });
 
 let server = http.createServer();
@@ -15,7 +16,7 @@ server.on('request', function (request, response) {
     Con.getConnection(function (err, connection) {
         if (err) {
             console.log(err);
-            console.log('数据库连接异常');
+            console.log('数据库连接异常,请等待数据库启动。');
         } else {
             connection.query(`select * from user;`, (err, rows) => {
                 connection.destroy();

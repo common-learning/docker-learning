@@ -11,7 +11,7 @@
 
 # Docker-Compose
 + ## Node
-    - [Node+MariaDB启动部署](./docker-compose/node-mariadb#如何使用node-mariadb)
+    - [Node+MariaDB启动部署](./docker-compose#如何使用node-mariadb)
 
 ## 其他资源
 - [很棒的Docker Compose示例](https://github.com/docker/awesome-compose)
