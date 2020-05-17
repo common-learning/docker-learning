@@ -1,4 +1,6 @@
 FROM mariadb:latest
-RUN mkdir -p /home/db/
-ADD . /home/db
+ENV AUTO_RUN_DIR /docker-entrypoint-initdb.d
+ENV INSTALL_DB_SQL test.sql
+COPY ./$INSTALL_DB_SQL $AUTO_RUN_DIR/
+RUN chmod a+x $AUTO_RUN_DIR/$INSTALL_DB_SQL
 ENV MYSQL_ROOT_PASSWORD=123456

@@ -12,6 +12,5 @@ $ 输入：123456
 ```bash
 $ cd dump-sql/
 $ docker build -t db:dump .
-$ docker run -itd -p 3306:3306 db:dump
-$ mysql -h 0.0.0.0 -P 3306 -u root -p123456 < test.sql
+$ docker run -itd -p db:dump
 ```
