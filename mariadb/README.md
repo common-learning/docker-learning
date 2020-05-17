@@ -12,5 +12,5 @@ $ 输入：123456
 ```bash
 $ cd dump-sql/
 $ docker build -t db:dump .
-$ docker run -itd -p db:dump
+$ docker run -itd db:dump
 ```
